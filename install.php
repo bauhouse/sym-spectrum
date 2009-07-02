@@ -167,7 +167,7 @@
 		$conf['database']['runtime_character_set_alter'] = '1';
 		$conf['database']['disable_query_caching'] = 'no';
 		$conf['public']['display_event_xml_in_source'] = 'no';
-		$conf['general']['sitename'] = 'Bare Bones';
+		$conf['general']['sitename'] = 'Spectrum';
 		$conf['region']['time_format'] = 'g:i a';
 		$conf['region']['date_format'] = 'd F Y';
 	
