@@ -152,9 +152,11 @@ CREATE TABLE `tbl_entries_data_1` (
   KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_1` ***
+INSERT INTO `tbl_entries_data_1` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 2, 'a-primer-to-symphony-2s-default-theme', 'A primer to Symphony 2\'s default theme');
+INSERT INTO `tbl_entries_data_1` (`id`, `entry_id`, `handle`, `value`) VALUES (5, 4, 'an-example-draft-article', 'An example draft article');
 
 -- *** STRUCTURE: `tbl_entries_data_10` ***
 DROP TABLE IF EXISTS `tbl_entries_data_10`;
@@ -267,9 +269,10 @@ CREATE TABLE `tbl_entries_data_17` (
   KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_17` ***
+INSERT INTO `tbl_entries_data_17` (`id`, `entry_id`, `handle`, `value`) VALUES (1, 5, 'allen-chang', 'Allen Chang');
 
 -- *** STRUCTURE: `tbl_entries_data_18` ***
 DROP TABLE IF EXISTS `tbl_entries_data_18`;
@@ -282,9 +285,10 @@ CREATE TABLE `tbl_entries_data_18` (
   KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_18` ***
+INSERT INTO `tbl_entries_data_18` (`id`, `entry_id`, `handle`, `value`) VALUES (1, 5, 'allen-chaoticpatterncom', 'allen@chaoticpattern.com');
 
 -- *** STRUCTURE: `tbl_entries_data_19` ***
 DROP TABLE IF EXISTS `tbl_entries_data_19`;
@@ -297,9 +301,10 @@ CREATE TABLE `tbl_entries_data_19` (
   KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_19` ***
+INSERT INTO `tbl_entries_data_19` (`id`, `entry_id`, `handle`, `value`) VALUES (1, 5, 'general-enquiry', 'General Enquiry');
 
 -- *** STRUCTURE: `tbl_entries_data_2` ***
 DROP TABLE IF EXISTS `tbl_entries_data_2`;
@@ -311,9 +316,11 @@ CREATE TABLE `tbl_entries_data_2` (
   PRIMARY KEY  (`id`),
   KEY `entry_id` (`entry_id`),
   FULLTEXT KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_2` ***
+INSERT INTO `tbl_entries_data_2` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (2, 2, 'Every theme in Symphony has an important mission: to introduce newcomers to Symphony by way of a working example. *Spectrum*, the name of this version\'s default theme, was designed and developed with such a mission in mind by following a set of constraints. A default theme is required to:\r\n\r\n1. be presented in a format that is universally identified and intuitive.\r\n2. have a clear and simple HTML structure.\r\n3. demonstrate the fundamental concepts in Symphony - `sections`, `fields`, `data sources` and `events` and their interactions together.\r\n4. avoid functionality that does not have any educational value.\r\n\r\n#### The design ####\r\n\r\nOur first rule states that a default theme needs to be in a format that is instantly recognisable to a user. As a result, all of the themes created in Symphony\'s history have emphasised a weblog structure. *Spectrum* continues this tradition.\r\n\r\n*Cubic*, the name of a previous default theme, followed the teaching mandate very closely. However, the theme took it one step further and removed complex structure and colour in favour of a simplified look and feel. The main design goal for *Spectrum* is to introduce more colours but still follow the philosophy of a simplistic layout.\r\n\r\n#### Features ####\r\n\r\n*Spectrum* has a handful of additional features that you won\'t find in previous default themes. These new features are not only meant to demonstrate the capabilities of the system but also explain some fundamental philosophies in Symphony 2. Below is a list of features:\r\n\r\n- Logged in users will see Links to Symphony\'s admin to edit articles, manage comments and add notes.\r\n- Logged in users will see 3 protected menu items, article drafts, the debug page and a link to the Symphony admin.\r\n- Website authors who have access to the admin can make their comments \"authorised\" which will colour their comment different to others.\r\n- Articles on the drafts page sports a button to publish the article.\r\n- Article images take advantage of Symphony\'s build-in image manipulation feature to crop and size the image automatically.\r\n- The contact form on the about page saves the content to the Messages section on the backend and emails the website\'s owner.\r\n\r\n#### Philosophy ####\r\n\r\nAll of the above takes advantage of new features found in version 2. An important concept that is being advocated in Symphony is the practise of creating a tighter connection between the front-end and the backend. Developers are encouraged to take advantage of the simplified URL structure of the admin to create a more convenient environment for their users.\r\n\r\nWith the introduction of the Event editor, developers now have even more control when developing a website. For example, the *Publish* button on the [article drafts page](drafts/) utilises the event editor to create an interaction between the frontend and the backend. This allows the *Publish* button to update the \"Publish this article\" checkbox field from the \"Articles\" section. This feature also compliments and encourages the philosophy of a more seamless environment between the website and the admin interface.', '<p>Every theme in Symphony has an important mission: to introduce newcomers to Symphony by way of a working example. <em>Spectrum</em>, the name of this version&#8217;s default theme, was designed and developed with such a mission in mind by following a set of constraints. A default theme is required to:</p>\n\n<ol>\n<li>be presented in a format that is universally identified and intuitive.</li>\n<li>have a clear and simple HTML structure.</li>\n<li>demonstrate the fundamental concepts in Symphony - <code>sections</code>, <code>fields</code>, <code>data sources</code> and <code>events</code> and their interactions together.</li>\n<li>avoid functionality that does not have any educational value.</li>\n</ol>\n\n<h4>The design</h4>\n\n<p>Our first rule states that a default theme needs to be in a format that is instantly recognisable to a user. As a result, all of the themes created in Symphony&#8217;s history have emphasised a weblog structure. <em>Spectrum</em> continues this tradition.</p>\n\n<p><em>Cubic</em>, the name of a previous default theme, followed the teaching mandate very closely. However, the theme took it one step further and removed complex structure and colour in favour of a simplified look and feel. The main design goal for <em>Spectrum</em> is to introduce more colours but still follow the philosophy of a simplistic layout.</p>\n\n<h4>Features</h4>\n\n<p><em>Spectrum</em> has a handful of additional features that you won&#8217;t find in previous default themes. These new features are not only meant to demonstrate the capabilities of the system but also explain some fundamental philosophies in Symphony 2. Below is a list of features:</p>\n\n<ul>\n<li>Logged in users will see Links to Symphony&#8217;s admin to edit articles, manage comments and add notes.</li>\n<li>Logged in users will see 3 protected menu items, article drafts, the debug page and a link to the Symphony admin.</li>\n<li>Website authors who have access to the admin can make their comments &#8220;authorised&#8221; which will colour their comment different to others.</li>\n<li>Articles on the drafts page sports a button to publish the article.</li>\n<li>Article images take advantage of Symphony&#8217;s build-in image manipulation feature to crop and size the image automatically.</li>\n<li>The contact form on the about page saves the content to the Messages section on the backend and emails the website&#8217;s owner.</li>\n</ul>\n\n<h4>Philosophy</h4>\n\n<p>All of the above takes advantage of new features found in version 2. An important concept that is being advocated in Symphony is the practise of creating a tighter connection between the front-end and the backend. Developers are encouraged to take advantage of the simplified URL structure of the admin to create a more convenient environment for their users.</p>\n\n<p>With the introduction of the Event editor, developers now have even more control when developing a website. For example, the <em>Publish</em> button on the <a href=\"drafts/\">article drafts page</a> utilises the event editor to create an interaction between the frontend and the backend. This allows the <em>Publish</em> button to update the &#8220;Publish this article&#8221; checkbox field from the &#8220;Articles&#8221; section. This feature also compliments and encourages the philosophy of a more seamless environment between the website and the admin interface.</p>\n');
+INSERT INTO `tbl_entries_data_2` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (5, 4, 'This is an example draft article. Feel free to test the system by pressing the *publish* button.', '<p>This is an example draft article. Feel free to test the system by pressing the <em>publish</em> button.</p>\n');
 
 -- *** STRUCTURE: `tbl_entries_data_20` ***
 DROP TABLE IF EXISTS `tbl_entries_data_20`;
@@ -325,9 +332,10 @@ CREATE TABLE `tbl_entries_data_20` (
   PRIMARY KEY  (`id`),
   KEY `entry_id` (`entry_id`),
   FULLTEXT KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_20` ***
+INSERT INTO `tbl_entries_data_20` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (1, 5, 'This is a test message to the guys in Azeroth.', 'This is a test message to the guys in Azeroth.');
 
 -- *** STRUCTURE: `tbl_entries_data_21` ***
 DROP TABLE IF EXISTS `tbl_entries_data_21`;
@@ -384,9 +392,11 @@ CREATE TABLE `tbl_entries_data_3` (
   PRIMARY KEY  (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_3` ***
+INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (2, 2, '2009-06-23T18:20:00-07:00', 1245806400, 1245806400);
+INSERT INTO `tbl_entries_data_3` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (5, 4, '2009-06-23T18:28:00-07:00', 1245806880, 1245806880);
 
 -- *** STRUCTURE: `tbl_entries_data_4` ***
 DROP TABLE IF EXISTS `tbl_entries_data_4`;
@@ -397,9 +407,11 @@ CREATE TABLE `tbl_entries_data_4` (
   PRIMARY KEY  (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `relation_id` (`relation_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_4` ***
+INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `relation_id`) VALUES (2, 2, 1);
+INSERT INTO `tbl_entries_data_4` (`id`, `entry_id`, `relation_id`) VALUES (5, 4, 3);
 
 -- *** STRUCTURE: `tbl_entries_data_5` ***
 DROP TABLE IF EXISTS `tbl_entries_data_5`;
@@ -410,9 +422,11 @@ CREATE TABLE `tbl_entries_data_5` (
   PRIMARY KEY  (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_5` ***
+INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `value`) VALUES (2, 2, 'yes');
+INSERT INTO `tbl_entries_data_5` (`id`, `entry_id`, `value`) VALUES (5, 4, 'no');
 
 -- *** STRUCTURE: `tbl_entries_data_6` ***
 DROP TABLE IF EXISTS `tbl_entries_data_6`;
@@ -425,9 +439,13 @@ CREATE TABLE `tbl_entries_data_6` (
   KEY `entry_id` (`entry_id`),
   KEY `handle` (`handle`),
   KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_6` ***
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `handle`, `value`) VALUES (1, 1, 'symphony', 'Symphony');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `handle`, `value`) VALUES (2, 3, 'entertainment', 'Entertainment');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `handle`, `value`) VALUES (3, 6, 'health', 'Health');
+INSERT INTO `tbl_entries_data_6` (`id`, `entry_id`, `handle`, `value`) VALUES (4, 7, 'firefly', 'Firefly');
 
 -- *** STRUCTURE: `tbl_entries_data_7` ***
 DROP TABLE IF EXISTS `tbl_entries_data_7`;
@@ -439,9 +457,13 @@ CREATE TABLE `tbl_entries_data_7` (
   PRIMARY KEY  (`id`),
   KEY `entry_id` (`entry_id`),
   FULLTEXT KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_7` ***
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (1, 1, 'A wise woman said to me once, \"If you\'re not using Symphony to publish your content on the web, then you\'re just a wild chipmunk. Get with the times and help me milk this cow.\"', '<p>A wise woman said to me once, &#8220;If you&#8217;re not using Symphony to publish your content on the web, then you&#8217;re just a wild chipmunk. Get with the times and help me milk this cow.&#8221;</p>\n');
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (2, 3, 'Everyday, 8 hours of one\'s life is taken up by sleep, 8 with work and another 4 to procrastination. The remaining 4 hours is a precious one. Use it for entertainment.', '<p>Everyday, 8 hours of one&#8217;s life is taken up by sleep, 8 with work and another 4 to procrastination. The remaining 4 hours is a precious one. Use it for entertainment.</p>\n');
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (3, 6, 'Two things that are in fashion today: health and climate issues. The kids are raving about good health these days. Apparently it\'s a positive thing.', '<p>Two things that are in fashion today: health and climate issues. The kids are raving about good health these days. Apparently it&#8217;s a positive thing.</p>\n');
+INSERT INTO `tbl_entries_data_7` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (4, 7, 'This is my sneaky way of advertising the best television show ever. Watch it for the funny.', '<p>This is my sneaky way of advertising the best television show ever. Watch it for the funny.</p>\n');
 
 -- *** STRUCTURE: `tbl_entries_data_8` ***
 DROP TABLE IF EXISTS `tbl_entries_data_8`;
@@ -454,9 +476,12 @@ CREATE TABLE `tbl_entries_data_8` (
   PRIMARY KEY  (`id`),
   KEY `entry_id` (`entry_id`),
   KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_8` ***
+INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (1, 8, '2009-06-23T18:28:00-07:00', 1245806880, 1245806880);
+INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (2, 9, '2009-06-23T18:28:00-07:00', 1245806880, 1245806880);
+INSERT INTO `tbl_entries_data_8` (`id`, `entry_id`, `value`, `local`, `gmt`) VALUES (3, 10, '2009-06-23T18:28:00-07:00', 1245806880, 1245806880);
 
 -- *** STRUCTURE: `tbl_entries_data_9` ***
 DROP TABLE IF EXISTS `tbl_entries_data_9`;
@@ -468,11 +493,24 @@ CREATE TABLE `tbl_entries_data_9` (
   PRIMARY KEY  (`id`),
   KEY `entry_id` (`entry_id`),
   FULLTEXT KEY `value` (`value`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- *** DATA: `tbl_entries_data_9` ***
+INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (1, 8, 'Check the official [Symphony downloads page](http://symphony-cms.com/downloads/) for a full list of extensions, ensembles and XSLT utilities.', '<p>Check the official <a href=\"http://symphony-cms.com/downloads/\">Symphony downloads page</a> for a full list of extensions, ensembles and XSLT utilities.</p>\n');
+INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (2, 9, 'Symphony took over 18 months to develop.', '<p>Symphony took over 18 months to develop.</p>\n');
+INSERT INTO `tbl_entries_data_9` (`id`, `entry_id`, `value`, `value_formatted`) VALUES (3, 10, 'Drop in and have a chat with the Symphony developers over at irc.freenode.net on #symphony. You\'ll need an [IRC Client](http://www.google.com/search?q=IRC+Client)', '<p>Drop in and have a chat with the Symphony developers over at irc.freenode.net on #symphony. You&#8217;ll need an <a href=\"http://www.google.com/search?q=IRC+Client\">IRC Client</a></p>\n');
 
 -- *** DATA: `tbl_entries` ***
+INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (1, 2, 1, '2009-07-26 02:30:49', '2009-07-26 09:30:49');
+INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (2, 1, 1, '2009-07-26 10:21:41', '2009-07-26 17:21:41');
+INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (3, 2, 1, '2009-07-26 14:49:03', '2009-07-26 21:49:03');
+INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (4, 1, 1, '2009-07-26 14:57:37', '2009-07-26 21:57:37');
+INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (5, 5, 0, '2009-07-26 15:06:01', '2009-07-26 22:06:01');
+INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (6, 2, 1, '2009-07-26 15:13:03', '2009-07-26 22:13:03');
+INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (7, 2, 1, '2009-07-26 15:16:41', '2009-07-26 22:16:41');
+INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (8, 3, 1, '2009-07-26 15:29:53', '2009-07-26 22:29:53');
+INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (9, 3, 1, '2009-07-26 15:30:12', '2009-07-26 22:30:12');
+INSERT INTO `tbl_entries` (`id`, `section_id`, `author_id`, `creation_date`, `creation_date_gmt`) VALUES (10, 3, 1, '2009-07-26 15:30:32', '2009-07-26 22:30:32');
 
 -- *** DATA: `tbl_extensions` ***
 INSERT INTO `tbl_extensions` (`id`, `name`, `status`, `version`) VALUES (1, 'debugdevkit', 'enabled', 1);

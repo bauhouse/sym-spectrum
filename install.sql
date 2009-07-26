@@ -43,7 +43,7 @@ CREATE TABLE `tbl_entries` (
   KEY `author_id` (`author_id`),
   KEY `creation_date` (`creation_date`),
   KEY `creation_date_gmt` (`creation_date_gmt`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** STRUCTURE: `tbl_extensions` ***
 DROP TABLE IF EXISTS `tbl_extensions`;
@@ -93,10 +93,9 @@ CREATE TABLE `tbl_fields_author` (
   `field_id` int(11) unsigned NOT NULL,
   `allow_author_change` enum('yes','no') collate utf8_unicode_ci NOT NULL,
   `allow_multiple_selection` enum('yes','no') collate utf8_unicode_ci NOT NULL default 'no',
-  `default_to_current_user` enum('yes','no') collate utf8_unicode_ci NOT NULL,
   PRIMARY KEY  (`id`),
   UNIQUE KEY `field_id` (`field_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** STRUCTURE: `tbl_fields_checkbox` ***
 DROP TABLE IF EXISTS `tbl_fields_checkbox`;
@@ -140,19 +139,19 @@ CREATE TABLE `tbl_fields_select` (
   `dynamic_options` int(11) unsigned default NULL,
   PRIMARY KEY  (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** STRUCTURE: `tbl_fields_selectbox_link` ***
 DROP TABLE IF EXISTS `tbl_fields_selectbox_link`;
 CREATE TABLE `tbl_fields_selectbox_link` (
   `id` int(11) unsigned NOT NULL auto_increment,
   `field_id` int(11) unsigned NOT NULL,
-  `allow_multiple_selection` enum('yes','no') NOT NULL default 'no',
-  `related_field_id` varchar(255) NOT NULL,
+  `allow_multiple_selection` enum('yes','no') collate utf8_unicode_ci NOT NULL default 'no',
+  `related_field_id` varchar(255) collate utf8_unicode_ci NOT NULL,
   `limit` int(4) unsigned NOT NULL default '20',
   PRIMARY KEY  (`id`),
   KEY `field_id` (`field_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** STRUCTURE: `tbl_fields_taglist` ***
 DROP TABLE IF EXISTS `tbl_fields_taglist`;
@@ -164,7 +163,7 @@ CREATE TABLE `tbl_fields_taglist` (
   PRIMARY KEY  (`id`),
   KEY `field_id` (`field_id`),
   KEY `pre_populate_source` (`pre_populate_source`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** STRUCTURE: `tbl_fields_textarea` ***
 DROP TABLE IF EXISTS `tbl_fields_textarea`;
@@ -235,8 +234,7 @@ CREATE TABLE `tbl_sections` (
   `hidden` enum('yes','no') collate utf8_unicode_ci NOT NULL default 'no',
   `navigation_group` varchar(255) collate utf8_unicode_ci NOT NULL default 'Content',
   PRIMARY KEY  (`id`),
-  UNIQUE KEY `handle` (`handle`),
-  KEY `navigation_group` (`navigation_group`)
+  UNIQUE KEY `handle` (`handle`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- *** STRUCTURE: `tbl_sections_association` ***
