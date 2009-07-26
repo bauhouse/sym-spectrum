@@ -1,6 +1,6 @@
 # Spectrum Symphony CMS Ensemble
 
-The Spectrum ensemble is a modified install package for Symphony 2.0.3. The main difference between this install and the official version is that this version has been rebuilt from a clean install with exactly the same structure as the default Spectrum theme.
+The Spectrum ensemble is a modified install package for Symphony 2.0.4. The main difference between this install and the official version is that this version has been rebuilt from a clean install with exactly the same structure as the default Spectrum theme.
 
 - This ensemble is based on the BareBones Symphony CMS Ensemble
 - CSS and images are included
