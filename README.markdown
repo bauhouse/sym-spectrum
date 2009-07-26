@@ -1,4 +1,3 @@
-<<<<<<< HEAD:README.markdown
 # Spectrum Branch of the Symphony 2 Repository
 
 This repository has been used to assemble the submodules necessary to build the [Spectrum Ensemble](http://github.com/bauhouse/sym-barebones/tree/master). It can be assembled with the following process:
@@ -6,24 +5,6 @@ This repository has been used to assemble the submodules necessary to build the 
 ### Install Symphony and Spectrum Workspace via Git
 
 Clone my fork of the Symphony 2 repository
-=======
-# Spectrum Symphony CMS Ensemble
-
-The Spectrum ensemble is a modified install package for Symphony 2.0.4. The main difference between this install and the official version is that this version has been rebuilt from a clean install with exactly the same structure as the default Spectrum theme.
-
-- This ensemble is based on the BareBones Symphony CMS Ensemble
-- CSS and images are included
-- No entries have been created
-- The order of the sections has been slightly modified
-
-### Install
-
-	git clone git://github.com/bauhouse/sym-spectrum.git
-
-### Install from Spectrum Branch
-
-This repository brings together two separate branches to simplify the install process. To install from these branches, the process looks something like this:
->>>>>>> d4036524678b61eaa7ad227db118ac9c5c307541:README.markdown
 
 	git clone git://github.com/bauhouse/symphony-2.git
 
@@ -39,11 +20,7 @@ Create a new branch called `spectrum`
 
 	git checkout -b spectrum
 
-<<<<<<< HEAD:README.markdown
 Pull the changes from the GitHub repository for the spectrum branch
-=======
-Pull the changes from the GitHub repository for the barebones branch
->>>>>>> d4036524678b61eaa7ad227db118ac9c5c307541:README.markdown
 
 	git pull origin spectrum
 
@@ -55,18 +32,13 @@ Update the submodules
 
 	git submodule update
 	
-<<<<<<< HEAD:README.markdown
 At this point, all the files required for a bare bones install are ready. The second branch that has been included as a submodule is the workspace, which is referring to a specific commit of the [spectrum branch](http://github.com/bauhouse/symphony-2/tree/spectrum) of my fork of the Symphony workspace repository. To clone this fork separately, use the following commands:
-=======
-At this point, all the files required for a bare bones install are ready. The second branch that has been included as a submodule is the workspace, which is referring to a specific commit of the `spectrum` branch of my fork of the Symphony workspace repository. To clone this fork separately, use the following commands:
->>>>>>> d4036524678b61eaa7ad227db118ac9c5c307541:README.markdown
 
 	git clone git://github.com/bauhouse/workspace.git
 	cd workspace
 	git checkout -b spectrum
 	git pull origin spectrum
 
-<<<<<<< HEAD:README.markdown
 ## The Spectrum Ensemble
 
 The [Spectrum Ensemble](http://github.com/bauhouse/sym-spectrum/tree/master) is a modified installer for Symphony 2.0.4. The main difference between this install and the official version is that this version has been rebuilt from a clean install with exactly the same structure as the default Spectrum theme.
@@ -86,8 +58,6 @@ This repository has been created to make the installation as simple as possible.
 	git clone git://github.com/bauhouse/sym-spectrum.git
 
 That should be all. Install Symphony as usual. (Find the instructions at the [official Symphony 2 repository](http://github.com/symphony/symphony-2).) For convenience, they have been included below:
-=======
->>>>>>> d4036524678b61eaa7ad227db118ac9c5c307541:README.markdown
 
 ## Symphony 2 ##
 
