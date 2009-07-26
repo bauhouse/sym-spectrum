@@ -1,3 +1,12 @@
+<<<<<<< HEAD:README.markdown
+# Spectrum Branch of the Symphony 2 Repository
+
+This repository has been used to assemble the submodules necessary to build the [Spectrum Ensemble](http://github.com/bauhouse/sym-barebones/tree/master). It can be assembled with the following process:
+
+### Install Symphony and Spectrum Workspace via Git
+
+Clone my fork of the Symphony 2 repository
+=======
 # Spectrum Symphony CMS Ensemble
 
 The Spectrum ensemble is a modified install package for Symphony 2.0.4. The main difference between this install and the official version is that this version has been rebuilt from a clean install with exactly the same structure as the default Spectrum theme.
@@ -14,6 +23,7 @@ The Spectrum ensemble is a modified install package for Symphony 2.0.4. The main
 ### Install from Spectrum Branch
 
 This repository brings together two separate branches to simplify the install process. To install from these branches, the process looks something like this:
+>>>>>>> d4036524678b61eaa7ad227db118ac9c5c307541:README.markdown
 
 	git clone git://github.com/bauhouse/symphony-2.git
 
@@ -29,7 +39,11 @@ Create a new branch called `spectrum`
 
 	git checkout -b spectrum
 
+<<<<<<< HEAD:README.markdown
+Pull the changes from the GitHub repository for the spectrum branch
+=======
 Pull the changes from the GitHub repository for the barebones branch
+>>>>>>> d4036524678b61eaa7ad227db118ac9c5c307541:README.markdown
 
 	git pull origin spectrum
 
@@ -41,13 +55,39 @@ Update the submodules
 
 	git submodule update
 	
+<<<<<<< HEAD:README.markdown
+At this point, all the files required for a bare bones install are ready. The second branch that has been included as a submodule is the workspace, which is referring to a specific commit of the [spectrum branch](http://github.com/bauhouse/symphony-2/tree/spectrum) of my fork of the Symphony workspace repository. To clone this fork separately, use the following commands:
+=======
 At this point, all the files required for a bare bones install are ready. The second branch that has been included as a submodule is the workspace, which is referring to a specific commit of the `spectrum` branch of my fork of the Symphony workspace repository. To clone this fork separately, use the following commands:
+>>>>>>> d4036524678b61eaa7ad227db118ac9c5c307541:README.markdown
 
 	git clone git://github.com/bauhouse/workspace.git
 	cd workspace
 	git checkout -b spectrum
 	git pull origin spectrum
 
+<<<<<<< HEAD:README.markdown
+## The Spectrum Ensemble
+
+The [Spectrum Ensemble](http://github.com/bauhouse/sym-spectrum/tree/master) is a modified installer for Symphony 2.0.4. The main difference between this install and the official version is that this version has been rebuilt from a clean install with exactly the same structure as the default Spectrum theme.
+
+## Install
+
+The Spectrum Ensemble repository brings together the [Symphony 2.0.4](http://github.com/symphony/symphony-2/tree/master) core application, the required extensions and the [Spectrum workspace](http://github.com/bauhouse/workspace/tree/spectrum) to simplify the install process. This installer provides a single ZIP archive or a single Git command to provide all the files necessary for installation. Refer to the README file for the [Spectrum workspace](http://github.com/bauhouse/workspace/tree/spectrum) for install instructions using Git to bring all the different source repositories together.
+
+### Install from Spectrum Ensemble ZIP Archive
+
+Go to the [Downloads](http://github.com/bauhouse/workspace/downloads) page to download the ZIP file. This is the simplest, if you want to avoid using Git altogether.
+
+### Install Spectrum Ensemble via Git
+
+This repository has been created to make the installation as simple as possible. A single Git command will provide all that you need:
+
+	git clone git://github.com/bauhouse/sym-spectrum.git
+
+That should be all. Install Symphony as usual. (Find the instructions at the [official Symphony 2 repository](http://github.com/symphony/symphony-2).) For convenience, they have been included below:
+=======
+>>>>>>> d4036524678b61eaa7ad227db118ac9c5c307541:README.markdown
 
 ## Symphony 2 ##
 
