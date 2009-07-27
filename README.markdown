@@ -1,47 +1,6 @@
-# Spectrum Branch of the Symphony 2 Repository
+# The Spectrum Ensemble
 
-This repository has been used to assemble the submodules necessary to build the [Spectrum Ensemble](http://github.com/bauhouse/sym-barebones/tree/master). It can be assembled with the following process:
-
-### Install Symphony and Spectrum Workspace via Git
-
-Clone my fork of the Symphony 2 repository
-
-	git clone git://github.com/bauhouse/symphony-2.git
-
-Rename the directory from `symphony-2` to `test`
-
-	mv symphony-2 test
-
-Change the current working directory to `test`
-
-	cd test
-
-Create a new branch called `spectrum`
-
-	git checkout -b spectrum
-
-Pull the changes from the GitHub repository for the spectrum branch
-
-	git pull origin spectrum
-
-Initialize the submodules
-
-	git submodule init
-
-Update the submodules
-
-	git submodule update
-	
-At this point, all the files required for a bare bones install are ready. The second branch that has been included as a submodule is the workspace, which is referring to a specific commit of the [spectrum branch](http://github.com/bauhouse/symphony-2/tree/spectrum) of my fork of the Symphony workspace repository. To clone this fork separately, use the following commands:
-
-	git clone git://github.com/bauhouse/workspace.git
-	cd workspace
-	git checkout -b spectrum
-	git pull origin spectrum
-
-## The Spectrum Ensemble
-
-The [Spectrum Ensemble](http://github.com/bauhouse/sym-spectrum/tree/master) is a modified installer for Symphony 2.0.4. The main difference between this install and the official version is that this version has been rebuilt from a clean install with exactly the same structure as the default Spectrum theme.
+The [Spectrum Ensemble](http://github.com/bauhouse/sym-spectrum/tree/master) is a modified installer for Symphony 2.0.4. The main difference between this install and the official version is that this version has been rebuilt from a clean install with exactly the same structure as the [default Spectrum theme](http://github.com/symphony/workspace).
 
 ## Install
 
